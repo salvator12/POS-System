@@ -108,7 +108,7 @@ const FormView = () => {
                             {filteredProducts.map((product, index) => (
                                 <GridItem 
                                     key={product.id} 
-                                    onClick={() => handleGridItemClick(index)} 
+                                    onClick={() => handleGridItemClick(product.id-1)} 
                                     cursor="pointer"
                                 >
                                     <Box bg={product.isSelected ? "teal.100" : "white"} p={3}>
